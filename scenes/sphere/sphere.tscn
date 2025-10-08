@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsppq7p86ikrn"]
+
+[ext_resource type="Script" uid="uid://ceo270i4bh27j" path="res://scripts/MoveHandleInputStrategy.cs" id="1_2cymu"]
+[ext_resource type="Script" uid="uid://d2beby3srfel1" path="res://scripts/ZoomHandleInputStrategy.cs" id="2_cp63j"]
+[ext_resource type="Script" uid="uid://3qc73jfs4d6l" path="res://scripts/InputHandlerComponent.cs" id="2_y8rug"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ctn58"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y8rug"]
+
+[node name="Sphere" type="CharacterBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_ctn58")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_y8rug")
+
+[node name="MoveHandleInputStrategy" type="Node3D" parent="." node_paths=PackedStringArray("CharacterBody")]
+script = ExtResource("1_2cymu")
+CharacterBody = NodePath("..")
+metadata/_custom_type_script = "uid://ceo270i4bh27j"
+
+[node name="ZoomHandleInputStrategy" type="Node" parent="." node_paths=PackedStringArray("CharacterBody")]
+script = ExtResource("2_cp63j")
+CharacterBody = NodePath("..")
+metadata/_custom_type_script = "uid://d2beby3srfel1"
+
+[node name="InputHandlerComponent" type="Node" parent="." node_paths=PackedStringArray("HandleInputStrategy")]
+script = ExtResource("2_y8rug")
+HandleInputStrategy = [NodePath("../MoveHandleInputStrategy"), NodePath("../ZoomHandleInputStrategy")]
+metadata/_custom_type_script = "uid://3qc73jfs4d6l"

@@ -1,0 +1,12 @@
+-Oz
+-v
+-fwasm-exceptions
+-DDISABLE_PERFTRACING_LISTEN_PORTS=1
+-DINVARIANT_GLOBALIZATION=1
+-DLINK_ICALLS=1
+-DGEN_PINVOKE=1
+-emit-llvm
+"-IC:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\ExportRelease\browser-wasm\wasm\for-publish"
+"-IC:\Users\kstgrd\.nuget\packages\microsoft.netcore.app.runtime.mono.multithread.browser-wasm\9.0.9\runtimes\browser-wasm\native\include\mono-2.0"
+"-IC:\Users\kstgrd\.nuget\packages\microsoft.netcore.app.runtime.mono.multithread.browser-wasm\9.0.9\runtimes\browser-wasm\native\include\wasm"
+-g

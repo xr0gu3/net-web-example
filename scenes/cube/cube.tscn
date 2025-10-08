@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dj8w6ay6rqeb4"]
+
+[ext_resource type="Script" uid="uid://c2bfgeojk86og" path="res://scripts/TurnHandleInputStrategy.cs" id="1_dec67"]
+[ext_resource type="Script" uid="uid://d2beby3srfel1" path="res://scripts/ZoomHandleInputStrategy.cs" id="1_wffmw"]
+[ext_resource type="Script" uid="uid://3qc73jfs4d6l" path="res://scripts/InputHandlerComponent.cs" id="2_3uo3n"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_72cy5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3uo3n"]
+
+[node name="Cube" type="CharacterBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_72cy5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_3uo3n")
+
+[node name="ZoomHandleInputStrategy" type="Node" parent="." node_paths=PackedStringArray("CharacterBody")]
+script = ExtResource("1_wffmw")
+CharacterBody = NodePath("..")
+metadata/_custom_type_script = "uid://d2beby3srfel1"
+
+[node name="InputHandlerComponent" type="Node" parent="." node_paths=PackedStringArray("HandleInputStrategy")]
+script = ExtResource("2_3uo3n")
+HandleInputStrategy = [NodePath("../TurnHandleInputStrategy"), NodePath("../ZoomHandleInputStrategy")]
+metadata/_custom_type_script = "uid://3qc73jfs4d6l"
+
+[node name="TurnHandleInputStrategy" type="Node3D" parent="." node_paths=PackedStringArray("CharacterBody")]
+script = ExtResource("1_dec67")
+CharacterBody = NodePath("..")
+TurnSpeed = 1.0
+metadata/_custom_type_script = "uid://c2bfgeojk86og"

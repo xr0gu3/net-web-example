@@ -1,0 +1,17 @@
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.csproj.AssemblyReference.cache
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.AssemblyInfoInputs.cache
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.AssemblyInfo.cs
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.csproj.CoreCompileInputs.cache
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\net-web-example.deps.json
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\net-web-example.runtimeconfig.json
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\net-web-example.dll
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\net-web-example.pdb
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-.C1324CCF.Up2Date
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.dll
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\refint\net-web-example.dll
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.pdb
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\net-web-example.genruntimeconfig.cache
+C:\Users\kstgrd\gdev\net-web-example\.godot\mono\temp\obj\Debug\ref\net-web-example.dll
